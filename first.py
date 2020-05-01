@@ -31,8 +31,19 @@ print(type(bmi))
 
 # to calculate the amount of money after 7 years investing $100
 savings = "amount of money after 7 years investing in $100 is "
-growth_multiplier = 100*1.1**7
+growth_multiplier = (100)*(1.1)**(7)
 print(savings + str(growth_multiplier))
+
+
+# to create list of age
+mom = 42
+dad = 45
+sid = 20
+max = 24
+daadi = 56
+family = [mom, dad, sid, daadi, max]
+print(family)
+
 
 
 
