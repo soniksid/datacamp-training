@@ -37,7 +37,7 @@ def square(num):
 	return value
 print(square(3))
 
-# Nested functions
+# Nested functions to print any value to its square or cube
 def raise_value(n):
 	def inner(x):
 		y= x ** n
@@ -84,4 +84,7 @@ print(5)
 # Lambda functions
 c = lambda a, b : a*4/b
 print(c(5, 4))
+
+
+# to get the builtin errors, use:
 print(dir(locals()['__builtins__']))
