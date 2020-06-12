@@ -39,7 +39,7 @@ from sqlalchemy import create_engine
 # making sqlite file into dataframe
 # engine1 = create_engine('sqlite:///database.sqlite')
 # con = engine1.connect()
-# rs = con.execute("SELECT * FROM Match")
+# rs = con.execute("SELECT * FROM Match") # (*)means to select all columns
 # df = pd.DataFrame(rs.fetchall())
 # df.columns = rs.keys() #making columns names 
 # con.close()
