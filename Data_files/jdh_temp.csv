@@ -1,0 +1,13 @@
+month,jdh_avg_temp(in_celcius),pollution,rain
+jan,18,11,Y
+feb,25,22,N
+mar,28,24,Y
+apr,35,36,Y
+may,40,38,N
+jun,45,42,Y
+jul,38,41,Y
+aug,36,38,N
+sep,32,20,Y
+oct,30,35,N
+nov,27,15,N
+dec,17,14,N
