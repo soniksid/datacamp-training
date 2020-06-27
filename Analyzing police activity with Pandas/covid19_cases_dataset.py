@@ -6,21 +6,21 @@ df = pd.read_csv('covid19_countrywise.csv')
 print(df)
 
 
-# # finding any NaN value
-# print(df.isnull())
+# finding any NaN value
+print(df.isnull())
 
 
-# # droping missing values
-# print(df.dropna())
+# droping missing values
+print(df.dropna())
 
 
-# # printing datatype of each column
-# print(df.dtypes)
+# printing datatype of each column
+print(df.dtypes)
 
 
-# # removing unwanted columns
-# df.drop(["1 week change", "1 week % increase"], axis = 'columns', inplace = True)
-# print(df.dtypes)
+# removing unwanted columns
+df.drop(["1 week change", "1 week % increase"], axis = 'columns', inplace = True)
+print(df.dtypes)
 
 
 # plotting the countrywise no. of cases and deaths
