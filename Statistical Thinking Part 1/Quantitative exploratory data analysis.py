@@ -21,3 +21,6 @@ census1.set_xticklabels(census1.get_xticklabels(), rotation = 75)
 plt.xlabel('States')
 plt.ylabel('Population')
 plt.show()
+
+
+# 
