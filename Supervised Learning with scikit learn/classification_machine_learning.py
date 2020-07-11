@@ -1,9 +1,10 @@
-# classification of data in machine learning
+# importing libraries 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 # reading dataset into df 
 df = pd.read_csv('iris_dataset.csv')
@@ -32,3 +33,14 @@ knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
 print(y_pred)
 print(knn.score(X_test, y_test))
+
+
+# printing confusion matrix
+X_train, X_test, y_train, y_test = train_test_split(data, df['ID'], test_size = 0.4, random_state=42)
+knn = KNeighborsClassifier(n_neighbors=6)
+knn.fit(X_train, y_train)
+y_pred = knn.predict(X_test)
+
+# Generate the confusion matrix and classification report
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))

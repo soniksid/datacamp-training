@@ -26,3 +26,4 @@ new_values = np.array([2.2],
 
 prediction = reg.predict(new_values)
 print(prediction)
+
